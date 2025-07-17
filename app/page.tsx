@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,13 +13,11 @@ export default function Home() {
           priority
           className="mx-auto mb-8"
         />
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">
-          Welcome to the Babynama Intern Assignment
-        </h1>
-        <p className="text-lg text-gray-600">
-          Your task is to build the feature at the <code>/webinars</code> page.
-        </p>
-        <p className="mt-4 text-gray-500">Good luck!</p>
+        <Link href="/webinars">
+          <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            View Webinars
+          </button>
+        </Link>
       </div>
     </main>
   );
